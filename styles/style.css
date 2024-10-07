@@ -1,5 +1,209 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+a:focus,
+button:focus {
+  outline: none;
+}
+
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid currentColor;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font, sans-serif); 
+  background: var(--bg-image) no-repeat top center var(--bg-color);
+  background-attachment: fixed;
+  /* background-size: auto 768px; */
 }
+
+.header {
+  position: relative;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.header__rec {
+  position: absolute;
+  color: var(--accent-color);
+  top: 20px;
+  right: 29px; 
+  text-transform: uppercase;
+}
+
+
+.header__rec::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  margin: 5px 19px 0 10px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after{
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu {
+  color: var(--accent-color);
+  padding-block-start: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  font-family: inherit;
+  color: var(--accent-color);
+  border-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: lowercase;
+  padding: 2.5px 13px;
+  transition: all;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid currentColor;
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid currentColor;;
+}
+
+.header__theme-menu-button:focus{
+  text-decoration: underline;
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible{
+  outline: 1px solid currentColor;
+  text-decoration: none;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  gap: 114px;
+  padding-block-start: 273px;
+  padding-block-end: 134px;
+}
+
+.header_content_title {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--header-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header_content_subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  align-self: flex-end;
+  color: var(--title-color);
+  width: 50%;
+}
+
+@media (width < 1024px) {
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .header__rec {
+    right: 48px; 
+  }
+
+  .header__theme-menu {
+    padding-block-start: 192px;
+  }
+
+  .header__theme-menu-list {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .header_content {
+    gap: 162px;
+    padding-block-start: 173px;
+    padding-block-end: 183px;
+  }
+}
+
+
+@media (width < 768px) {
+
+  .header {
+    padding: 0 10px;
+  }
+
+  .header__rec {
+    top: 10px;
+    right: 19px; 
+  }
+
+  .decorated-zone::before{
+    right: 10px;
+    top: 10px;
+  }
+
+  .decorated-zone::after{
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .header__theme-menu {
+    padding-block-start: 75px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header_content {
+    padding-block-start: 65px;
+    padding-block-end: 66px;
+    gap: 55px;
+  }
+
+  .header_content_title  {
+      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header_content_subtitle {
+    width: 100%;
+  }
+}
+
