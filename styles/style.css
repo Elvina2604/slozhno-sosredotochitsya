@@ -17,6 +17,8 @@ button:focus-visible {
   /* background-size: auto 768px; */
 }
 
+/* HEADER */
+
 .header {
   position: relative;
   height: 100vh;
@@ -135,7 +137,7 @@ button:focus-visible {
   width: 50%;
 }
 
-@media (width < 1024px) {
+@media (width < 1024px) and (width >= 768) {
 
   .header {
     padding: 0 20px;
@@ -162,7 +164,7 @@ button:focus-visible {
 }
 
 
-@media (width < 768px) {
+@media (width < 768px) and (width >=375) {
 
   .header {
     padding: 0 10px;
@@ -207,3 +209,67 @@ button:focus-visible {
   }
 }
 
+/* MAIN */
+
+.main{
+  padding: 0 20px;
+  margin-block-start: 60px;
+  display: grid;
+  gap: 80px;
+}
+
+.section_list {
+  display: grid;
+  grid-template-columns: 1fr 70%;
+  gap: 20px;
+
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.about_concentraition {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article_about_concentraition {
+
+}
+
+.title_about_concentraition {
+  color: var(--text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 23px;
+}
+
+.paragraphly_about_concentraition {
+  color: var(--paragraphly-color);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: inherit;
+  line-height: 23px;
+}
+
+.paragraphly__link_about_concentration{
+
+}
+
+@media (width < 1024px) and (width >= 768) {
+
+}
+
+@media (width < 768px) and (width >=375) {
+  .main{
+    padding: 0 10px;
+    margin-block-start: 40px;
+    gap: 50px;
+  }
+}
