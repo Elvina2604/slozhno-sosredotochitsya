@@ -1,5 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-a:focus,
+/* a:focus,
 button:focus {
   outline: none;
 }
@@ -8,13 +8,13 @@ button:focus {
 a:focus-visible,
 button:focus-visible {
   outline: 1px solid currentColor;
-}
+} */
 
 .page {
   font-family: var(--main-font, sans-serif); 
   background: var(--bg-image) no-repeat top center var(--bg-color);
   background-attachment: fixed;
-  /* background-size: auto 768px; */
+  background-size: auto 100%;
 }
 
 /* HEADER */
@@ -22,14 +22,13 @@ button:focus-visible {
 .header {
   position: relative;
   height: 100vh;
-  padding: 0 20px;
 }
 
 .header__rec {
   position: absolute;
   color: var(--accent-color);
-  top: 20px;
-  right: 29px; 
+  top: 22px;
+  right: 49px; 
   text-transform: uppercase;
 }
 
@@ -41,8 +40,9 @@ button:focus-visible {
   height: 10px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  margin: 5px 19px 0 10px;
+  margin: 5px 20px 0 10px;
   box-shadow: 0 0 4px 2px var(--accent-color);
+  line-height: 100%;
 }
 
 
@@ -90,8 +90,9 @@ button:focus-visible {
   font-weight: 400;
   background-color: transparent;
   text-transform: lowercase;
-  padding: 2.5px 13px;
+  padding: 1.5px 13px;
   transition: all;
+  line-height: 100%;
 }
 
 .header__theme-menu-button_active {
@@ -116,9 +117,10 @@ button:focus-visible {
 .header_content {
   display: flex;
   flex-direction: column;
-  gap: 114px;
-  padding-block-start: 273px;
+  gap: 78px;
+  padding-block-start: 240px;
   padding-block-end: 134px;
+  padding-right: 20px;
 }
 
 .header_content_title {
@@ -134,10 +136,11 @@ button:focus-visible {
   font-size: 18px;
   align-self: flex-end;
   color: var(--title-color);
-  width: 50%;
+  width: 491px;
+  line-height: 23px;
 }
 
-@media (width < 1024px) and (width >= 768) {
+@media (width < 1024px) {
 
   .header {
     padding: 0 20px;
@@ -148,7 +151,7 @@ button:focus-visible {
   }
 
   .header__theme-menu {
-    padding-block-start: 192px;
+    padding-block-start: 19px;
   }
 
   .header__theme-menu-list {
@@ -164,7 +167,7 @@ button:focus-visible {
 }
 
 
-@media (width < 768px) and (width >=375) {
+@media (width < 768px) {
 
   .header {
     padding: 0 10px;
@@ -172,7 +175,7 @@ button:focus-visible {
 
   .header__rec {
     top: 10px;
-    right: 19px; 
+    right: 39px; 
   }
 
   .decorated-zone::before{
@@ -206,6 +209,7 @@ button:focus-visible {
 
   .header_content_subtitle {
     width: 100%;
+    color: var(--text-color);
   }
 }
 
@@ -214,15 +218,15 @@ button:focus-visible {
 .main{
   padding: 0 20px;
   margin-block-start: 60px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 80px;
 }
 
 .section_list {
   display: grid;
-  grid-template-columns: 1fr 70%;
+  grid-template-columns: 1fr 66%;
   gap: 20px;
-
 }
 
 .section__title {
@@ -231,23 +235,34 @@ button:focus-visible {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+  margin-block-end: 20px;
+}
+
+.section__title_dark {
+  color: var(--main-text-color);
 }
 
 .about_concentraition {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .article_about_concentraition {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .title_about_concentraition {
-  color: var(--text-color);
+  color: var(--main-text-color);
   font-family: inherit;
   font-weight: 700;
   font-size: inherit;
   line-height: 23px;
+}
+
+.title_about_concentraition_better{
+  font-weight: 400;
 }
 
 .paragraphly_about_concentraition {
@@ -259,17 +274,125 @@ button:focus-visible {
 }
 
 .paragraphly__link_about_concentration{
-
+  text-shadow: 4px 4px 0 var(--accent-color);
+  border: transparent;
+  outline: none;
 }
 
-@media (width < 1024px) and (width >= 768) {
-
+.paragraphly__link_about_concentration:focus {
+  outline: none;
 }
 
-@media (width < 768px) and (width >=375) {
+.paragraphly__link_about_concentration:focus-visible {
+  outline: 1px solid var(--paragraphly-color);;
+}
+
+.paragraphly__link_about_concentration:hover {
+  border-bottom: 1px solid var(--paragraphly-color);
+}
+
+@media (width < 1024px) {
+  .section__title {
+    width: 40%;
+  }
+}
+
+@media (width < 768px) {
+
   .main{
     padding: 0 10px;
     margin-block-start: 40px;
     gap: 50px;
+  }
+
+  .section_list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .section__title {
+    width: 100%;
+  }
+}
+
+/* Section_gallery */
+
+.section_gallery {
+  display: grid;
+  gap: 20px;
+}
+
+.img_gallery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img_sunset {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  inline-size: 649px;
+  block-size: 260px;
+}
+
+.img_ice-cream {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  inline-size: 315px;
+  block-size: 595px;
+}
+
+.img_tape {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  inline-size: 315px;
+  block-size: 768px;
+}
+
+.img_books {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  inline-size: 315px;
+  block-size: 315px;
+}
+
+.img_street {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  inline-size: 649px;
+  block-size: 428px;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  margin-block-start: 60px;
+  padding: 319px 20px;
+}
+
+.title_footer {
+  font-weight: 700;
+  color: var(--header-color);
+  font-family: inherit;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+@media (width < 1024px) {
+  .footer {
+    padding: 462px 20px;
+  }
+}
+
+@media (width < 768px) {
+  .footer {
+    margin-block-start: 40px;
+    padding: 286px 10px;
+  }
+  
+  .title_footer {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
