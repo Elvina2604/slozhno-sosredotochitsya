@@ -26,6 +26,7 @@ button:focus-visible {
 
 .header__rec {
   position: absolute;
+  display: inline-block;
   color: var(--accent-color);
   top: 22px;
   right: 49px; 
@@ -45,6 +46,9 @@ button:focus-visible {
   line-height: 100%;
 }
 
+.decorated-zone {
+  position: relative;
+}
 
 .decorated-zone::before {
   content: '';
@@ -64,8 +68,8 @@ button:focus-visible {
   top: 20px;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
 }
 
 .header__theme-menu {
@@ -76,7 +80,7 @@ button:focus-visible {
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 11px;
   padding: 0;
   list-style: none;
 }
@@ -105,7 +109,6 @@ button:focus-visible {
 }
 
 .header__theme-menu-button:focus{
-  text-decoration: underline;
   outline: none;
 }
 
