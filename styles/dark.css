@@ -10,14 +10,10 @@
   --accent-color: #FF0070;
   --header-color: #DB00FF;
   --accent-color-header: var(--accent-color);
+  --title-color: var(--accent-color);
   --button-color:  var(--accent-color);
   --paragraphly-color: #F1B2CE;
   --bg-image: url(../images/cover-image-dark.png);
-}
-
-
-.page.theme_dark {
- 
 }
 
 .theme-dark .header__rec {
@@ -31,6 +27,7 @@
     --accent-color: #FF0070;
     --header-color: #DB00FF;
     --accent-color-header: var(--accent-color);
+    --title-color: var(--accent-color);
     --button-color:  var(--accent-color);
     --paragraphly-color: #F1B2CE;
     --bg-image: url(../images/cover-image-dark.png);
