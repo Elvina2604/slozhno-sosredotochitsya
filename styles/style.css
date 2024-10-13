@@ -18,7 +18,6 @@ button:focus-visible {
   background-color: var(--bg-color);
   background-position: center;
   background-attachment: fixed;
-  background-size: auto 100%;
 }
 
 /* HEADER */
@@ -71,7 +70,7 @@ button:focus-visible {
   border-bottom: 1px solid var(--button-color);
 }
 
-.decorated-zone::after{
+.decorated-zone::after {
   content: '';
   position: absolute;
   right: 20px;
@@ -120,11 +119,11 @@ button:focus-visible {
   outline: 1px solid currentColor;;
 }
 
-.header__theme-menu-button:focus{
+.header__theme-menu-button:focus {
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible{
+.header__theme-menu-button:focus-visible {
   outline: 1px solid currentColor;
   text-decoration: none;
 }
@@ -168,15 +167,11 @@ button:focus-visible {
   .header__rec {
     right: 50px; 
   }
-/* 
-  .header__theme-menu {
-    padding-block-start: 19px;
-  } */
 
   .header__theme-menu-list {
-      flex-direction: column;
-      align-items: flex-end;
-      padding-block-start: 174px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-block-start: 174px;
   }
 
   .header_content {
@@ -209,12 +204,12 @@ button:focus-visible {
     padding-right: 2px;
   }
 
-  .decorated-zone::before{
+  .decorated-zone::before {
     left: 10px;
     bottom: 10px;
   }
 
-  .decorated-zone::after{
+  .decorated-zone::after {
     top: 10px;
     right: 12px;
     bottom: 10px;
@@ -239,7 +234,7 @@ button:focus-visible {
     gap: 56px;
   }
 
-  .header_content_title  {
+  .header_content_title {
     line-height: 82.5%;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
@@ -335,7 +330,7 @@ button:focus-visible {
   line-height: 23px;
 }
 
-.title_about_concentraition_better{
+.title_about_concentraition_better {
   font-weight: 400;
 }
 
@@ -382,7 +377,6 @@ button:focus-visible {
   grid-template-columns: repeat (3, 1fr);
   grid-template-rows:repeat (3, 1fr);
   gap: 20px;
-  max-height: 1050px;
   grid-template-areas: 
     "container_gallery--one container_gallery--one container_gallery--two"
     "container_gallery--three container_gallery--four container_gallery--two"
@@ -443,7 +437,7 @@ button:focus-visible {
     width: 32.5%;
   }
 
-  .section_list_two .section__title--two  {
+  .section_list_two .section__title--two {
     flex: 0 0 25%;
     width: 25%;
   }
@@ -493,7 +487,7 @@ button:focus-visible {
     width: 80%;
   }
 
-  .section_list_two .section__title--two  {
+  .section_list_two .section__title--two {
     width: 100%;
   }
 
@@ -510,7 +504,6 @@ button:focus-visible {
     flex-direction: column;
     margin-block-start: 10px;
     gap: 10px;
-    max-height: 1400px;
   }
 
   .container_gallery--one {

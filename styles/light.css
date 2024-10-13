@@ -30,6 +30,6 @@
   --paragraphly-color: #353430;
   --title-color: var(--paragraphly-color);
   --button-color: var(--paragraphly-color);
-  --bg-image: url(../images/cover-image-light.png);/* Дублируем переменные светлой темы */    
-  }
+  --bg-image: url(../images/cover-image-light.png);
+}
 }
