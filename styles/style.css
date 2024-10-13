@@ -11,7 +11,7 @@ button:focus-visible {
 } */
 
 .page {
-  font-family: var(--main-font); 
+  font-family: var(--main-font);
   background: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@ button:focus-visible {
   color: var(--accent-color);
   top: 22px;
   right: 49px;
-  font-size: 18px; 
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -140,7 +140,7 @@ button:focus-visible {
 
 .header_content_title {
   position: relative;
-  font-family: var(--main-font); 
+  font-family: var(--main-font);
   font-weight: 700;
   color: var(--header-color);
   line-height: 1.83;
@@ -149,7 +149,7 @@ button:focus-visible {
 }
 
 .header_content_subtitle {
-  font-family: var(--main-font); 
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
   align-self: flex-end;
@@ -199,7 +199,7 @@ button:focus-visible {
 
   .header__rec {
     top: 10px;
-    right: 39px; 
+    right: 39px;
     padding-top: 2px;
     padding-right: 2px;
   }
