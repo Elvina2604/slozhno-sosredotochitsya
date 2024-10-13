@@ -4,6 +4,16 @@
   переключая тему
 */
 
+:root .theme-light {
+  --bg-color: #FFF1F7;
+  --accent-color: #FF8DCB;
+  --accent-header-color: #FF0070;
+  --header-color: #FFC2E6;
+  --paragraphly-color: #353430;
+  --button-color: var(--paragraphly-color);
+  --bg-image: url(../images/cover-image-light.png);
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -11,17 +21,21 @@
   */
 }
 
-:root.theme-light {
-  /* Переменные светлой темы */    
-}
-
 /* Остальные стили */
+
+.theme_light .header__rec {
+  visibility: hidden;
+}
 
 @media (prefers-color-scheme: light) {
 :root {
-      
+  --bg-color: #FFF1F7;
+  --main-text-color: var(--bg-color);
+  --accent-color: #FF8DCB;
+  --accent-header-color: #FF0070;
+  --header-color: #FFC2E6;
+  --paragraphly-color: #353430;
+  --button-color: var(--paragraphly-color);
   --bg-image: url(../images/cover-image-light.png);/* Дублируем переменные светлой темы */    
   }
 }
-
-/* Остальные стили */
