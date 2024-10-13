@@ -165,7 +165,7 @@ button:focus-visible {
   }
 
   .header__rec {
-    right: 50px; 
+    right: 50px;
   }
 
   .header__theme-menu-list {
@@ -532,7 +532,7 @@ button:focus-visible {
 
 .footer {
   position: relative;
-  height: 100vw;
+  height: 100vh;
   margin-block-start: 60px;
   padding: 283px 0;
 }
