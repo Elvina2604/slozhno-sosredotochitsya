@@ -12,6 +12,7 @@
   --header-color: #FFC2E6;
   --paragraphly-color: #353430;
   --title-color: var(--paragraphly-color);
+  --hover-color: rgba(50, 49, 45, 0.4);
   --button-color: var(--paragraphly-color);
   --bg-image: url(../images/cover-image-light.png);
 }
@@ -29,6 +30,7 @@
   --header-color: #FFC2E6;
   --paragraphly-color: #353430;
   --title-color: var(--paragraphly-color);
+  --hover-color: rgba(50, 49, 45, 0.4);
   --button-color: var(--paragraphly-color);
   --bg-image: url(../images/cover-image-light.png);
 }

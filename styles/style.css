@@ -4,7 +4,6 @@ button:focus {
   outline: none;
 }
 
-
 a:focus-visible,
 button:focus-visible {
   outline: 1px solid currentColor;
@@ -116,7 +115,7 @@ button:focus-visible {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid currentColor;;
+  outline: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -144,7 +143,7 @@ button:focus-visible {
   font-weight: 700;
   color: var(--header-color);
   line-height: 1.83;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: var(--logo-size);
   text-shadow: 4px 4px 0 var(--accent-header-color);
 }
 
@@ -236,7 +235,7 @@ button:focus-visible {
 
   .header_content_title {
     line-height: 82.5%;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: var(--logo-size-mobile);
   }
 
   .header_content_subtitle {
@@ -261,22 +260,21 @@ button:focus-visible {
   gap: 20px;
 } */
 
-
 .section_list {
   display: flex;
   gap: 20px;
   padding: 81px 20px 0;
 }
 
-.section_list_one {
+.section_list_word {
   padding-block-start: 60px;
 }
 
-.section_list .container_two .container_four {
+.section_list .container-special {
   display: grid;
 }
 
-.section_list .section__concentraition .section__concentraition_special {
+.section_list .section__concentraition_special {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -291,17 +289,12 @@ button:focus-visible {
   width: 32%;
 }
 
-.section_list_two .section__title--two {
+.section_list_word-special .section__title--special {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 35%;
   width: 35%;
   margin-block-end: 20px;
-}
- 
-.section_list .section__concentraition_special {
-  display: grid;
-  grid-template-columns: 1fr 1fr 315px;
 }
 
 .section_list .section__title_dark {
@@ -356,11 +349,11 @@ button:focus-visible {
 }
 
 .paragraphly__link_about_concentration:focus-visible {
-  outline: 1px solid var(--paragraphly-color);;
+  outline: 1px solid currentColor;
 }
 
 .paragraphly__link_about_concentration:hover {
-  border-bottom: 1px solid var(--paragraphly-color);
+  border-bottom: 1px solid currentColor;
 }
 
 
@@ -378,9 +371,13 @@ button:focus-visible {
   grid-template-rows:repeat (3, 1fr);
   gap: 20px;
   grid-template-areas: 
-    "container_gallery--one container_gallery--one container_gallery--two"
-    "container_gallery--three container_gallery--four container_gallery--two"
-    "container_gallery--three container_gallery--five container_gallery--five";
+    "container_gallery--sunset container_gallery--sunset container_gallery--ice_cream"
+    "container_gallery--tape container_gallery--books container_gallery--ice_cream"
+    "container_gallery--tape container_gallery--natural container_gallery--natural";
+}
+
+.section__title--image {
+  width: 100%;
 }
 
 .container_gallery .img_gallery {
@@ -390,27 +387,27 @@ button:focus-visible {
   object-position: center;
 }
 
-.container_gallery--one {
-  grid-area: container_gallery--one;
+.container_gallery--sunset {
+  grid-area: container_gallery--sunset;
   block-size: 260px;
 }
 
-.container_gallery--two {
-  grid-area: container_gallery--two;
+.container_gallery--ice_cream {
+  grid-area: container_gallery--ice_cream;
   /* block-size: 595px; */
 }
 
-.container_gallery--three {
-  grid-area: container_gallery--three;
+.container_gallery--tape {
+  grid-area: container_gallery--tape;
 }
 
-.container_gallery--four {
-  grid-area: container_gallery--four;
+.container_gallery--books {
+  grid-area: container_gallery--books;
   block-size: 315px;
 }
 
-.container_gallery--five {
-  grid-area: container_gallery--five;
+.container_gallery--natural {
+  grid-area: container_gallery--natural;
   block-size: 428px;
   margin-top: 5px;
 }
@@ -424,7 +421,7 @@ button:focus-visible {
     padding: 81px 20px 0 20px;
   }
 
-  .section_list_one {
+  .section_list_word {
     padding-block-start: 60px;
   }
   
@@ -437,28 +434,28 @@ button:focus-visible {
     width: 32.5%;
   }
 
-  .section_list_two .section__title--two {
+  .section_list_word-special .section__title--special {
     flex: 0 0 25%;
     width: 25%;
   }
 
-  .container_gallery--one {
+  .container_gallery--sunset {
     block-size: 192px;
   }
   
-  .container_gallery--two {
+  .container_gallery--ice_cream {
     /* block-size: 355px; */
   }
   
-  .container_gallery--three {
+  .container_gallery--tape {
     /* block-size: 237px; */
   }
   
-  .container_gallery--four {
+  .container_gallery--books {
     block-size: 230px;
   }
   
-  .container_gallery--five {
+  .container_gallery--natural {
     block-size: 318px;
     margin-top: 0px;
   }
@@ -478,7 +475,7 @@ button:focus-visible {
     gap: 20px;
   }
 
-  .section_list_one {
+  .section_list_word {
     padding-block-start: 40px;
   }
 
@@ -487,11 +484,11 @@ button:focus-visible {
     width: 80%;
   }
 
-  .section_list_two .section__title--two {
+  .section_list_word-special .section__title--special {
     width: 100%;
   }
 
-.section_list_three .section__title {
+  .section_list_word_conc .section__title {
     width: 100%;
   }
 
@@ -506,23 +503,23 @@ button:focus-visible {
     gap: 10px;
   }
 
-  .container_gallery--one {
+  .container_gallery--sunset {
     block-size: 142px;
   }
   
-  .container_gallery--two {
+  .container_gallery--ice_cream {
     block-size: 355px;
   }
   
-  .container_gallery--three {
+  .container_gallery--tape {
     block-size: 237px;
   }
   
-  .container_gallery--four {
+  .container_gallery--books {
     block-size: 355px;
   }
   
-  .container_gallery--five {
+  .container_gallery--natural {
     block-size: 237px;
     margin-top: 0px;
   }
@@ -549,7 +546,7 @@ button:focus-visible {
   color: var(--header-color);
   font-family: inherit;
   text-align: center;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: var(--logo-size);
   text-shadow: 3px 2px 0px var(--accent-header-color);
 }
 
@@ -576,7 +573,7 @@ button:focus-visible {
   }
 
   .title_footer {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: var(--logo-size-mobile);
     line-height: 82.5%;
     text-shadow: 3px 2px 0px var(--accent-color-header);
   }

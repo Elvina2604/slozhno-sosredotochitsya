@@ -12,6 +12,7 @@
   --accent-color-header: var(--accent-color);
   --title-color: var(--accent-color);
   --button-color:  var(--accent-color);
+  --hover-color: rgba(255, 0, 112, 0.4);
   --paragraphly-color: #F1B2CE;
   --bg-image: url(../images/cover-image-dark.png);
 }
@@ -29,6 +30,7 @@
     --accent-color-header: var(--accent-color);
     --title-color: var(--accent-color);
     --button-color:  var(--accent-color);
+    --hover-color: rgba(255, 0, 112, 0.4);
     --paragraphly-color: #F1B2CE;
     --bg-image: url(../images/cover-image-dark.png);
   }
