@@ -4,12 +4,13 @@
   переключая тему
 */
 
-:root .theme-light {
+.page.theme-light {
   --bg-color: #FFF1F7;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
   --accent-header-color: #FF0070;
   --header-color: #FFC2E6;
+  --header-title-color: var(--paragraphly-color);
   --paragraphly-color: #353430;
   --title-color: var(--paragraphly-color);
   --hover-color: rgba(50, 49, 45, 0.4);
@@ -28,6 +29,7 @@
   --accent-color: #FF8DCB;
   --accent-header-color: #FF0070;
   --header-color: #FFC2E6;
+  --header-title-color: var(--paragraphly-color);
   --paragraphly-color: #353430;
   --title-color: var(--paragraphly-color);
   --hover-color: rgba(50, 49, 45, 0.4);

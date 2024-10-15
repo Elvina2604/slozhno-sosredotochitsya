@@ -44,4 +44,6 @@ a {
 .title-decor {
   background-color: var(--accent-color);
   color: var(--main-text-color);
+  font-weight: bold;
+  block-size: min-content;
 }
