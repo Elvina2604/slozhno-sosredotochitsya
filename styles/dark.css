@@ -10,30 +10,14 @@
   --accent-color: #FF0070;
   --header-color: #DB00FF;
   --header-title-color: var(--main-text-color);
-  --accent-color-header: var(--accent-color);
+  --accent-header: #FF0070;
   --title-color: var(--accent-color);
   --button-color:  var(--accent-color);
-  --hover-color: rgba(255, 0, 112, 0.4);
   --paragraphly-color: #F1B2CE;
+  --hover-color: rgba(255, 0, 112, 0.4);
   --bg-image: url(../images/cover-image-dark.png);
 }
 
 .theme-dark .header__rec {
   visibility: unset;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #000028;
-    --main-text-color: #000028;
-    --accent-color: #FF0070;
-    --header-color: #DB00FF;
-    --header-title-color: var(--main-text-color);
-    --accent-color-header: var(--accent-color);
-    --title-color: var(--accent-color);
-    --button-color:  var(--accent-color);
-    --hover-color: rgba(255, 0, 112, 0.4);
-    --paragraphly-color: #F1B2CE;
-    --bg-image: url(../images/cover-image-dark.png);
-  }
 }

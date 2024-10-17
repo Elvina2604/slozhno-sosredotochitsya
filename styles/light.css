@@ -4,11 +4,11 @@
   переключая тему
 */
 
-.page.theme-light {
+.page.theme_light {
   --bg-color: #FFF1F7;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
-  --accent-header-color: #FF0070;
+  --accent-header: #FF0070;
   --header-color: #FFC2E6;
   --header-title-color: var(--paragraphly-color);
   --paragraphly-color: #353430;
@@ -20,6 +20,7 @@
 
 .theme_light .header__rec {
   visibility: hidden;
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,7 +28,7 @@
   --bg-color: #FFF1F7;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
-  --accent-header-color: #FF0070;
+  --accent-header: #FF0070;
   --header-color: #FFC2E6;
   --header-title-color: var(--paragraphly-color);
   --paragraphly-color: #353430;
@@ -35,5 +36,10 @@
   --hover-color: rgba(50, 49, 45, 0.4);
   --button-color: var(--paragraphly-color);
   --bg-image: url(../images/cover-image-light.png);
+}
+
+.header__rec {
+  visibility: hidden;
+  display: none;
 }
 }
