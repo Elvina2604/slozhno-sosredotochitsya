@@ -18,6 +18,6 @@
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .header__rec {
+.page.theme_dark .header__rec {
   visibility: unset;
 }

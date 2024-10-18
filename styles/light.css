@@ -20,7 +20,6 @@
 
 .theme_light .header__rec {
   visibility: hidden;
-  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -40,6 +39,5 @@
 
 .header__rec {
   visibility: hidden;
-  display: none;
 }
 }

@@ -33,13 +33,11 @@ button:focus-visible {
 
 .header__rec {
   position: absolute;
-  /* display: inline-block; */
   color: var(--accent-color);
   inset-inline-end: 4.7%;
   inset-block-start: 2.8%;
   text-transform: uppercase;
 }
-
 
 .header__rec::after {
   content: '';
@@ -80,7 +78,6 @@ button:focus-visible {
   border-right: 1px solid var(--button-color);
   border-top: 1px solid var(--button-color);
 }
-
 
 .title-decor {
   background-color: var(--accent-color);
@@ -268,7 +265,6 @@ button:focus-visible {
 
   .header_content_subtitle {
     width: min(355px, 100%);
-    color: var(--text-color);
     margin-block-start: 15%;
     margin-block-end: 0;
   }
@@ -538,7 +534,7 @@ button:focus-visible {
   font-family: inherit;
   text-align: center;
   font-size: var(--logo-size);
-  text-shadow: 3px 2px 0px var(--accent-header-color);
+  text-shadow: 3px 2px 0px var(--accent-header);
 }
 
 @media (width < 1024px) {
@@ -549,7 +545,7 @@ button:focus-visible {
 
   .title_footer {
     padding-block: 0;
-    text-shadow: 3px 2px 0px var(--accent-color-header);
+    text-shadow: 3px 2px 0px var(--accent-color);
   }
   
 }
@@ -568,6 +564,6 @@ button:focus-visible {
     font-size: var(--logo-size-mobile);
     line-height: 82.5%;
     padding-block: 3.5%;
-    text-shadow: 3px 2px 0px var(--accent-color-header);
+    text-shadow: 3px 2px 0px var(--accent-color);
   }
 }
